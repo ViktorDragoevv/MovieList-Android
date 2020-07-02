@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="3"
+    android:orientation="vertical"
+
+
+    >
+<TextView
+    android:textColor="@android:color/holo_orange_light"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="Movie name:"
+    android:id="@+id/MovieName"
+    android:textStyle="bold"
+    android:textSize="22sp"
+    android:layout_gravity="center">
+
+
+</TextView>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="autour:"
+            android:id="@+id/author"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_gravity="center">
+
+
+        </TextView>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="year:"
+            android:id="@+id/year"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_gravity="center">
+
+
+        </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="genre:"
+        android:id="@+id/genre"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_gravity="center">
+
+
+    </TextView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="right"
+            android:layout_weight="6"
+            android:text="Rating:"
+            android:textSize="22sp"
+            android:textStyle="bold">
+
+        </TextView>
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:numStars="3"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
